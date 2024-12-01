@@ -134,35 +134,6 @@ export default function MobileMenu() {
             >
               Reseñas
             </Link>
-            {token ? (
-              <Link
-                href="#/pages/dashboard"
-                fontWeight="medium"
-                px={4}
-                py={3}
-                color="purple.600"
-                _hover={{
-                  textDecoration: 'none',
-                  color: 'lightbranding.200',
-                }}
-              >
-                Panel principal
-              </Link>
-            ) : (
-              <Link
-                href="#/auth/sign-in"
-                fontWeight="medium"
-                px={4}
-                py={3}
-                color="purple.600"
-                _hover={{
-                  textDecoration: 'none',
-                  color: 'lightbranding.200',
-                }}
-              >
-                Iniciar sesión
-              </Link>
-            )}
             <Box>
                 <Button
                   variant="ghost"
@@ -174,13 +145,25 @@ export default function MobileMenu() {
                   w="max-content"
                   onClick={toggleColorMode}
                 >
-                  <Icon
+
+                <Link
+                    href="#/home"
+                    fontWeight="medium"
+                    px={4}
+                    py={3}
+                    _hover={{
+                      textDecoration: 'none',
+                      color: 'lightbranding.200',
+                    }}
+                  >
+                    <Icon
                     m="10px"
                     h="18px"
                     w="18px"
                     color={navbarIcon}
                     as={colorMode === 'light' ? IoMdMoon : IoMdSunny}
                   />
+                  </Link>
                 </Button>
               </Box>
           </Flex>
