@@ -1,0 +1,11 @@
+.planet-container {
+    width: 50%;
+    height: 45vh;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 982px) {
+    .planet-container {
+      width: 100%;
+    }
+  }

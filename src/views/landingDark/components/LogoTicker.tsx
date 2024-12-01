@@ -13,10 +13,10 @@ const logos = [
 export const LogoTicker = () => {
   return (
     <section className="py-20 md:py-24">
-      <div className="container ml-40" >
-        <div className="flex items-center gap-5 justify-end"> {/* Cambiado a justify-end */}
-          <div className="flex-1 md:flex-none text-right"> {/* Alinea el texto a la derecha */}
-            <h2>Trusted by top innovative teams</h2>
+      <div className="container px-4 sm:px-8 md:px-16 lg:px-40"> {/* Aseguramos un padding responsivo */}
+        <div className="flex items-center gap-5 justify-between md:justify-end"> {/* Cambiado justify-between para mejorar el espaciado en pantallas pequeñas */}
+          <div className="flex-1 md:flex-none text-center md:text-right"> {/* Alinea el texto a la derecha en pantallas grandes */}
+            <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">Trusted by top innovative teams</h2> {/* Escalabilidad en el tamaño del texto */}
           </div>
           <div className="flex flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
             <motion.div
@@ -27,16 +27,14 @@ export const LogoTicker = () => {
                 repeat: Infinity,
                 ease: "linear",
               }}
-              className="flex flex-none gap-14 pr-14 -translate-x-1/2"
+              className="flex gap-10 sm:gap-12 md:gap-14 -translate-x-1/2"
             >
               {[...logos, ...logos].map((logo, index) => (
                 <Image
                   key={index}
                   src={logo.src}
-                  width={logo}
-                  height={logo}
                   alt={`Logo ${index}`}
-                  className="h-6 w-auto"
+                  className="h-6 sm:h-8 md:h-10 w-auto"  // Escalado de tamaño de logo según el dispositivo
                 />
               ))}
             </motion.div>
