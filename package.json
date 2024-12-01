@@ -1,0 +1,116 @@
+{
+  "name": "Santsoft",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --mode production",
+    "lint": "eslint .",
+    "start": "serve -s dist",
+    "preview": "vite preview --mode production"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/react": "2.6.1",
+    "@chakra-ui/system": "2.5.7",
+    "@chakra-ui/theme-tools": "^1.3.6",
+    "@emotion/cache": "^11.12.0",
+    "@emotion/react": "^11.12.0",
+    "@emotion/styled": "^11.12.0",
+    "@headlessui/react": "^2.1.5",
+    "@hookform/resolvers": "^3.9.0",
+    "@next/font": "^14.2.15",
+    "@react-three/drei": "^9.118.0",
+    "@react-three/fiber": "^8.17.10",
+    "@tanstack/react-table": "^8.19.3",
+    "animate.css": "^4.1.1",
+    "apexcharts": "3.50.0",
+    "axios": "^1.7.3",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^11.11.11",
+    "jwt-decode": "^4.0.0",
+    "moment-timezone": "^0.5.45",
+    "react": "18.3.1",
+    "react-apexcharts": "1.4.1",
+    "react-calendar": "^5.0.0",
+    "react-circular-progressbar": "^2.1.0",
+    "react-custom-scrollbars-2": "^4.5.0",
+    "react-data-grid": "^7.0.0-beta.46",
+    "react-dom": "18.3.1",
+    "react-dropzone": "^14.2.3",
+    "react-hook-form": "^7.53.0",
+    "react-i18next": "^15.0.1",
+    "react-icons": "^5.2.1",
+    "react-is": "^18.3.1",
+    "react-modal-video": "^2.0.2",
+    "react-router-dom": "^6.25.1",
+    "react-select": "^5.8.0",
+    "react-toastify": "^10.0.5",
+    "sass": "^1.77.8",
+    "serve": "^14.2.4",
+    "styled-components": "^6.1.12",
+    "stylis": "^4.1.1",
+    "stylis-plugin-rtl": "2.0.2",
+    "swiper": "^11.1.14",
+    "tailwind-merge": "^2.5.5",
+    "three": "^0.170.0",
+    "ts-essentials": "^10.0.1",
+    "web-vitals": "^1.1.2",
+    "yup": "^1.4.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@tailwindcss/forms": "^0.5.9",
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.10",
+    "@types/react-calendar": "^3.5.2",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-modal-video": "^1.2.3",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.12.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^4.7.4",
+    "typescript-eslint": "^8.9.0",
+    "vite": "^5.4.8"
+  },
+  "engines": {
+    "node": "20.10.0"
+  },
+  "overrides": {
+    "vite": {
+      "rollup": "npm:@rollup/wasm-node"
+    }
+  },
+  "resolutions": {
+    "rollup": "npm:@rollup/wasm-node"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
+  }
+}

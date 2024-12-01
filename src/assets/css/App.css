@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Urbanist-Bold';
+  src: url('../fonts/UrbanistBold.ttf');
+}
+
+@font-face {
+  font-family: 'Urbanist-Regular';
+  src: url('../fonts/UrbanistRegular.ttf');
+}
+
+body {
+  font-family: "Urbanist-Regular" !important;
+}
+
+option {
+  color: black;
+}
