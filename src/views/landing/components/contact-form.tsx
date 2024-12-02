@@ -43,6 +43,7 @@ const ContactForm: React.FC = () => {
       flexDirection={{ base: 'column', md: 'row' }}
       mt={{ base: 40, md: 0 }}
       mb={{ base: 120, md: 0 }}
+      id='contactform'
     >
       <Flex
         w="90vw"

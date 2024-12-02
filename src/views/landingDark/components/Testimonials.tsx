@@ -5,7 +5,7 @@ import { Image } from "@chakra-ui/react";
 
 export const TestimonialsD = () => {
   return (
-    <section className="py-20 md:py-24 flex justify-center items-center">
+    <section id="Testimonials" className="py-20 md:py-24 flex justify-center items-center">
       <div className="container text-center">
         <h2 className="text-5xl md:text-6xl font-medium tracking-tighter">
           Beyond Expectations.

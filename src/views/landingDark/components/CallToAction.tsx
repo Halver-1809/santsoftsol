@@ -22,6 +22,7 @@ export const CallToAction = () => {
   return (
     <section
       ref={sectionRef}
+      id="pricing" 
       className="h-screen flex items-center justify-center py-20 md:py-24"
     >
       <div className="container">

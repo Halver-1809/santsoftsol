@@ -20,6 +20,7 @@ export const Heros: React.FC = () => {
   return (
     <motion.section
       ref={sectionRef}
+      id="Hero"
       className="h-[492px] md:h-[800px] flex items-center overflow-hidden relative [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]"
       style={{ backgroundImage: `url(${StarsImage.src})`, backgroundPositionY }}
       animate={{

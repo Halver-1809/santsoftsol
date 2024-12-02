@@ -4,12 +4,12 @@ import React from "react";
 interface PropsBannerDown {}
 
 export const BannerDown: React.FC<PropsBannerDown> = () => {
-  const bgPricipal = useColorModeValue('#F9D47D', '#aea4fb');
+  const bgPricipal = useColorModeValue("#F9D47D", "#aea4fb");
 
   return (
     <Box
       bg={bgPricipal}
-      w={{ base: "90%", md: "65%" }} // Adjust width for smaller screens
+      w={{ base: "90%", md: "65%" }}
       mx="auto"
       borderRadius="50px"
       mb={10}
@@ -17,21 +17,21 @@ export const BannerDown: React.FC<PropsBannerDown> = () => {
       color="white"
     >
       <Flex
-        direction={{ base: "column", md: "row" }} // Adjust flex direction for smaller screens
+        direction={{ base: "column", md: "row" }}
         align="center"
         justify="space-between"
       >
         <Box
-          textAlign="left"
-          w={{ base: "100%", md: "75%" }} // Set width to 100% for smaller screens
-          mb={{ base: 6, md: 0 }} // Add bottom margin for smaller screens
+          textAlign={{ base: "center", md: "left" }} // Centralizar en móvil, alineación izquierda en PC
+          w={{ base: "100%", md: "75%" }}
+          mb={{ base: 6, md: 0 }}
         >
           <Text
-            fontSize={{ base: "3xl", md: "6xl" }} // Adjust text size for smaller screens
+            fontSize={{ base: "3xl", md: "6xl" }}
             fontWeight="bold"
             color="white"
             mb={-3}
-            ml={{ base: 0, md: 35 }} // Add left margin for larger screens
+            ml={{ base: 0, md: 35 }}
             marginBottom={10}
           >
             <span style={{ color: "white" }}>¿</span>
@@ -69,7 +69,8 @@ export const BannerDown: React.FC<PropsBannerDown> = () => {
             py={4}
             px={6}
             w="fit-content"
-            ml={{ base: 0, md: 35 }} // Add margins for larger screens
+            mx={{ base: "auto", md: "inherit" }} // Centrar botón en móvil
+            ml={{ base: 0, md: 35 }}
           >
             <Image
               src="/Whatsapp.png"
@@ -88,7 +89,7 @@ export const BannerDown: React.FC<PropsBannerDown> = () => {
         <Image
           src="/negrito.png"
           alt="Negrito"
-          boxSize={{ base: "60%", md: "40%" }} // Adjust image size for smaller screens
+          boxSize={{ base: "60%", md: "40%" }}
         />
       </Flex>
     </Box>

@@ -81,7 +81,7 @@ export default function Header() {
               </ListItem>
               <ListItem>
                 <Link
-                  href="#migracion"
+                  href="#services"
                   fontWeight="medium"
                   px={4}
                   py={3}
@@ -91,16 +91,16 @@ export default function Header() {
                   }}
                   onClick={(e) => {
                     e.preventDefault();
-                    const section = document.querySelector('#migracion');
+                    const section = document.querySelector('#services');
                     section?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
-                  Stages
+                  Services
                 </Link>
               </ListItem>
               <ListItem>
                 <Link
-                  href="#benefits"
+                  href="#objectives"
                   fontWeight="medium"
                   px={4}
                   py={3}
@@ -110,11 +110,11 @@ export default function Header() {
                   }}
                   onClick={(e) => {
                     e.preventDefault();
-                    const section = document.querySelector('#benefits');
+                    const section = document.querySelector('#objectives');
                     section?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
-                  Benefits
+                  Objectives
                 </Link>
               </ListItem>
               <ListItem>
@@ -138,7 +138,7 @@ export default function Header() {
               </ListItem>
               <ListItem>
                 <Link
-                  href="#testimonials"
+                  href="#customers"
                   fontWeight="medium"
                   px={4}
                   py={3}
@@ -148,11 +148,30 @@ export default function Header() {
                   }}
                   onClick={(e) => {
                     e.preventDefault();
-                    const section = document.querySelector('#testimonials');
+                    const section = document.querySelector('#customers');
                     section?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
-                  Testimonials
+                  Customers
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link
+                  href="#contactform"
+                  fontWeight="medium"
+                  px={4}
+                  py={3}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: 'lightbranding.200',
+                  }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.querySelector('#contactform');
+                    section?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
+                  Contact form
                 </Link>
               </ListItem>
               <ListItem>
@@ -182,6 +201,7 @@ export default function Header() {
                     color={navbarIcon}
                     as={colorMode === 'light' ? IoMdMoon : IoMdSunny}
                   />
+                  
                   </Link>
                  
                 </Button>

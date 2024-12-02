@@ -106,7 +106,7 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
 
 export default function Zigzag() {
   return (
-    <Box maxW="6xl" mx="auto" px={[4, 6]} py={[12, 20]} id="benefits">
+    <Box maxW="6xl" mx="auto" px={[4, 6]} py={[12, 20]} id="objectives">
       <Box textAlign="center" mb={12}>
         <Text
           fontSize="lg"

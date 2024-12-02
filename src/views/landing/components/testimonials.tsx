@@ -8,7 +8,7 @@ import {
 
 export default function Testimonials() {
   return (
-    <Box as="section" py={{ base: 12, md: 20 }} id="testimonials">
+    <Box as="section" py={{ base: 12, md: 20 }} id="customers">
       <Box maxW="6xl" mx="auto" px={{ base: 4, sm: 6 }}>
         {/* Section header */}
         <Box maxW="3xl" mx="auto" textAlign="center" pb={{ base: 12, md: 20 }}>

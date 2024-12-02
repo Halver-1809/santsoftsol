@@ -25,6 +25,7 @@ export const ContactMe = () => {
   return (
     <section
       ref={sectionRef}
+      id="ContactMe"  
       className="h-screen flex items-center justify-center py-20 md:py-24"
     >
       <div className="container">

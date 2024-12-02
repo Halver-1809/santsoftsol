@@ -15,30 +15,25 @@ export default function Features() {
   return (
     <Box
       as="section"
-      py={{ base: '12', md: '20' }}
-      maxW="6xl"
+      py={{ base: '8', md: '16' }}
+      maxW={{ base: '100%', xl: '6xl' }}
       mx="auto"
-      px={{ base: '4', sm: '6' }}
-      id="migration"
+      px={{ base: '4', md: '8' }}
+      id="services"
     >
-      <Box
-        textAlign="justify"
-        maxW="3xl"
-        mx="auto"
-        pb={{ base: '12', md: '20' }}
-      >
-        <Heading as="h2" size="xl" mb="4">
+      <Box textAlign="center" maxW="3xl" mx="auto" pb={{ base: '8', md: '16' }}>
+        <Heading as="h2" size="lg" mb="4">
           Why choose us?
         </Heading>
-        <Text fontSize="xl" color="gray.400">
-          At Santsoft, we understand that every company has unique needs. That's why we offer customized and tailored solutions 
-          to maximize the value of your Salesforce investment. With years of experience and a customer-centric approach, 
-          we help companies like K2 and Sonos optimize their business processes, improve operational efficiencies, and enhance 
-          their customer experience by implementing advanced Salesforce solutions. Lighten the load on your management system 
+        <Text fontSize={{ base: 'md', md: 'lg' }} color="gray.500">
+          At Santsoft, we understand that every company has unique needs. That's why we offer customized and tailored solutions
+          to maximize the value of your Salesforce investment. With years of experience and a customer-centric approach, we
+          help companies like K2 and Sonos optimize their business processes, improve operational efficiencies, and enhance
+          their customer experience by implementing advanced Salesforce solutions. Lighten the load on your management system
           and allow your talent to focus on what really matters to create impact.
         </Text>
       </Box>
-      <Heading as="h2" size="xl" mb="4">
+      <Heading as="h2" size="lg" textAlign="center" mb="8">
         What we offer:
       </Heading>
       <Swiper
@@ -49,130 +44,64 @@ export default function Features() {
         modules={[Pagination, Navigation, Autoplay]}
         loop={true}
         style={{
-          width: '80%',
-          padding: '20px 0',
+          width: '100%',
         }}
       >
-        <SwiperSlide>
-          <Flex
-            direction="column"
-            align="center"
-            textAlign="center"
-            px={6}
-            py={8}
-            bg={bgColor}
-            borderRadius="lg"
-            boxShadow="md"
-            transition="transform 0.3s ease, background-color 0.3s ease"
-            _hover={{ transform: 'scale(1.05)', bg: 'gray.100' }}
-          >
-            <Icon as={IoAnalyticsSharp} w={16} h={16} mb="4" color={iconColor} />
-            <Heading as="h4" size="md" mb="2">
-              Salesforce Consulting
-            </Heading>
-            <Text fontSize="lg" color="gray.600" p={10}>
-              Our team of Salesforce experts will guide you through the entire process, from strategic planning to platform implementation 
-              and customization. We ensure that Salesforce perfectly fits your business needs, improving productivity and efficiency.
-            </Text>
-          </Flex>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Flex
-            direction="column"
-            align="center"
-            textAlign="center"
-            px={6}
-            py={8}
-            bg={bgColor}
-            borderRadius="lg"
-            boxShadow="md"
-            transition="transform 0.3s ease, background-color 0.3s ease"
-            _hover={{ transform: 'scale(1.05)', bg: 'gray.100' }}
-          >
-            <Icon as={MdCreateNewFolder} w={16} h={16} mb="4" color={iconColor} />
-            <Heading as="h4" size="md" mb="2">
-              Custom Development
-            </Heading>
-            <Text fontSize="lg" color="gray.600" p={10}>
-              We understand that every business is different, which is why we offer custom development to optimize workflows and improve 
-              customer interactions. From creating custom applications to system integration, our solutions are designed to help you 
-              achieve your business goals.
-            </Text>
-          </Flex>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Flex
-            direction="column"
-            align="center"
-            textAlign="center"
-            px={6}
-            py={8}
-            bg={bgColor}
-            borderRadius="lg"
-            boxShadow="md"
-            transition="transform 0.3s ease, background-color 0.3s ease"
-            _hover={{ transform: 'scale(1.05)', bg: 'gray.100' }}
-          >
-            <Icon as={IoCopySharp} w={16} h={16} mb="4" color={iconColor} />
-            <Heading as="h4" size="md" mb="2">
-              Salesforce Implementation and Optimization
-            </Heading>
-            <Text fontSize="lg" color="gray.600" p={10}>
-              We ensure a smooth and successful Salesforce implementation, helping your team take full advantage of the platform's features. 
-              We specialize in Salesforce integration with other systems and optimizing your business processes for the best outcomes.
-            </Text>
-          </Flex>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Flex
-            direction="column"
-            align="center"
-            textAlign="center"
-            px={6}
-            py={8}
-            bg={bgColor}
-            borderRadius="lg"
-            boxShadow="md"
-            transition="transform 0.3s ease, background-color 0.3s ease"
-            _hover={{ transform: 'scale(1.05)', bg: 'gray.100' }}
-          >
-            <Icon as={MdDataExploration} w={16} h={16} mb="4" color={iconColor} />
-            <Heading as="h4" size="md" mb="2">
-              Continuous Support and Maintenance
-            </Heading>
-            <Text fontSize="lg" color="gray.600" p={10}>
-              At Santsoft, we not only help you implement Salesforce but also provide continuous support to ensure your system works 
-              optimally at all times. Our team is available to resolve any issues and ensure your platform continues evolving to meet 
-              your business needs.
-            </Text>
-          </Flex>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Flex
-            direction="column"
-            align="center"
-            textAlign="center"
-            px={6}
-            py={8}
-            bg={bgColor}
-            borderRadius="lg"
-            boxShadow="md"
-            transition="transform 0.3s ease, background-color 0.3s ease"
-            _hover={{ transform: 'scale(1.05)', bg: 'gray.100' }}
-          >
-            <Icon as={FaCheckCircle} w={16} h={16} mb="4" color={iconColor} />
-            <Heading as="h4" size="md" mb="2">
-              Verification
-            </Heading>
-            <Text fontSize="lg" color="gray.600" p={10}>
-              Test and validate basic scenarios to ensure data completeness and configuration integrity. Complement your business testing with our solutions.
-            </Text>
-          </Flex>
-        </SwiperSlide>
+        {[
+          {
+            icon: IoAnalyticsSharp,
+            title: 'Salesforce Consulting',
+            text:
+              'Our team of Salesforce experts will guide you through the entire process, from strategic planning to platform implementation and customization. We ensure that Salesforce perfectly fits your business needs, improving productivity and efficiency.',
+          },
+          {
+            icon: MdCreateNewFolder,
+            title: 'Custom Development',
+            text:
+              'We understand that every business is different, which is why we offer custom development to optimize workflows and improve customer interactions. From creating custom applications to system integration, our solutions are designed to help you achieve your business goals.',
+          },
+          {
+            icon: IoCopySharp,
+            title: 'Salesforce Implementation and Optimization',
+            text:
+              'We ensure a smooth and successful Salesforce implementation, helping your team take full advantage of the platform\'s features. We specialize in Salesforce integration with other systems and optimizing your business processes for the best outcomes.',
+          },
+          {
+            icon: MdDataExploration,
+            title: 'Continuous Support and Maintenance',
+            text:
+              'At Santsoft, we not only help you implement Salesforce but also provide continuous support to ensure your system works optimally at all times. Our team is available to resolve any issues and ensure your platform continues evolving to meet your business needs.',
+          },
+          {
+            icon: FaCheckCircle,
+            title: 'Verification',
+            text:
+              'Test and validate basic scenarios to ensure data completeness and configuration integrity. Complement your business testing with our solutions.',
+          },
+        ].map((item, index) => (
+          <SwiperSlide key={index}>
+            <Flex
+              direction="column"
+              align="center"
+              textAlign="center"
+              px={{ base: '4', md: '6' }}
+              py={{ base: '6', md: '8' }}
+              bg={bgColor}
+              borderRadius="lg"
+              boxShadow="md"
+              transition="transform 0.3s ease, background-color 0.3s ease"
+              _hover={{ transform: 'scale(1.05)', bg: useColorModeValue('gray.200', 'gray.700') }}
+            >
+              <Icon as={item.icon} w={{ base: 12, md: 16 }} h={{ base: 12, md: 16 }} mb="4" color={iconColor} />
+              <Heading as="h4" size="md" mb="2">
+                {item.title}
+              </Heading>
+              <Text fontSize={{ base: 'sm', md: 'lg' }} color="gray.600" p={{ base: '4', md: '6' }}>
+                {item.text}
+              </Text>
+            </Flex>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </Box>
   );
