@@ -68,7 +68,7 @@ export default function MobileMenu() {
   return (
     <Box>
       <Flex align="center" justify="space-between" p={4}>
-        <Box>
+        <Box className='md:hidden'>
           <Button
             variant="ghost"
             bg="darkbrading.100"

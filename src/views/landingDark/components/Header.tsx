@@ -58,7 +58,7 @@ export const HeaderTwo = () => {
           </div>
 
           {/* Contenedor que rodea el botón del sol y el menú hamburguesa en dispositivos móviles */}
-          <div className="flex-1 flex justify-center items-center gap-4 md:hidden">
+          <div className="flex-1 flex justify-center items-center gap-4 ">
             <Button onClick={goToHome}>
               <IoMdSunny color="white" size={24} />
             </Button>
