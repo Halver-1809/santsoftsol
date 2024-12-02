@@ -57,10 +57,10 @@ export const CallToAction = () => {
           ></motion.div>
           <div className="relative">
             <h2 className="text-5xl md:text-6xl text-center font-medium tracking-tighter max-w-sm mx-auto">
-              AI-driven SEO for everyone.
+              Maximize Salesforce with Santsoft.
             </h2>
             <p className="text-lg md:text-xl text-center text-white/70 tracking-tight px-5 mt-5 max-w-xs mx-auto">
-              Achieve clear, impactful results without the complexity.
+              Tailored solutions to help you optimize Salesforce and grow your business.
             </p>
             <div className="flex justify-center mt-8">
               <Button>Join waitlist</Button>

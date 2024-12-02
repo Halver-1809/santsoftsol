@@ -29,27 +29,30 @@ export const featuresTabs = [
 
 export const testimonials = [
   {
-    text: "“This product has completely transformed how I manage my projects and deadlines”",
+    text: "“At Santsoft, we are committed to empowering businesses with Salesforce solutions that drive real transformation.”",
     name: "Santiago Rojas",
-    title: "Founder & CEO",
+    title: "Founder & CEO @ Santsoft",
     avatarImg: Avatar4,
   },
   {
-    text: "“These AI tools have completely revolutionized our SEO entire strategy overnight”",
+    text: "“Santsoft’s custom solutions made Salesforce perfectly align with our needs.”",
     name: "Jamie Lee",
     title: "Founder @ Pulse",
     avatarImg: Avatar2,
   },
   {
-    text: "“The user interface is so intuitive and easy to use, it has saved us countless hours”",
+    text: "“Santsoft’s personalized Salesforce support significantly improved our operations.”",
     name: "Alisa Hester",
     title: "Product @ Innovate",
     avatarImg: Avatar3,
   },
   {
-    text: "“Our team's productivity has increased significantly since we started using this tool”",
+    text: "“Our Salesforce system became much more efficient thanks to Santsoft’s expertise.”",
     name: "Laura Loaiza",
     title: "CTO @ Tech Solutions",
     avatarImg: Avatar1,
   },
 ];
+
+
+
