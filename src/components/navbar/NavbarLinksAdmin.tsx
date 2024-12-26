@@ -18,7 +18,6 @@ import { SidebarResponsive } from '@/components/sidebar/Sidebar';
 import PropTypes from 'prop-types';
 import { MdNotificationsNone } from 'react-icons/md';
 import { IoMdMoon, IoMdSunny } from 'react-icons/io';
-import { dashboardRoutes } from '@/routes/dashboardRoutes';
 import useAuth from '@/hooks/useAuth';
 import Configurator from './Configurator';
 import { useEffect, useState } from 'react';
@@ -48,12 +47,7 @@ export default function HeaderLinks(props: {
     setUserInfo(user);
   }, [user]);
 
-  const filteredRoutes = dashboardRoutes.filter((route) => {
-    if (route.roles) {
-      return route.roles.includes(role);
-    }
-    return true;
-  });
+
 
   return (
     <Flex
@@ -76,7 +70,6 @@ export default function HeaderLinks(props: {
         me="10px"
         borderRadius="30px"
       /> */}
-      <SidebarResponsive routes={filteredRoutes} />
       <Menu>
         <MenuButton p="0px">
           <Icon

@@ -11,7 +11,6 @@ import { SidebarContext } from '@/contexts/SidebarContext';
 import useAuth from '@/hooks/useAuth';
 import { useEffect, useState } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import { dashboardRoutes } from '@/routes/dashboardRoutes';
 
 export default function Dashboard(props: { [x: string]: any }) {
   const { ...rest } = props;
@@ -22,19 +21,7 @@ export default function Dashboard(props: { [x: string]: any }) {
   const [hovered, setHovered] = useState(false);
   const [toggleSidebar, setToggleSidebar] = useState(false);
 
-  const filteredRoutes = dashboardRoutes.filter((route) => {
-    if (route.roles) {
-      return route.roles.includes(role);
-    }
-    return true;
-  });
 
-  useEffect(() => {
-    getActiveRoute(dashboardRoutes);
-    getActiveNavbar(dashboardRoutes);
-    getActiveNavbarText(dashboardRoutes);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location.pathname, dashboardRoutes]);
 
   const getRoute = () => {
     return window.location.pathname !== '/pages/full-screen-maps';
@@ -122,7 +109,7 @@ export default function Dashboard(props: { [x: string]: any }) {
           hovered={hovered}
           setHovered={setHovered}
           mini={mini}
-          routes={dashboardRoutes}
+          routes={' '}
           display="none"
           {...rest}
         />
@@ -165,9 +152,9 @@ export default function Dashboard(props: { [x: string]: any }) {
                 setMini={setMini}
                 mini={mini}
                 onOpen={onOpen}
-                brandText={getActiveRoute(dashboardRoutes)}
-                secondary={getActiveNavbar(dashboardRoutes)}
-                message={getActiveNavbarText(dashboardRoutes)}
+                brandText={getActiveRoute()}
+                secondary={getActiveNavbar()}
+                message={getActiveNavbarText()}
                 fixed={fixed}
                 {...rest}
               />
@@ -183,7 +170,7 @@ export default function Dashboard(props: { [x: string]: any }) {
               pt="50px"
             >
               <Routes>
-                {getRoutes(dashboardRoutes)}
+                {getRoutes()}
                 <Route
                   path="/"
                   element={<Navigate to="/pages/" replace />}
