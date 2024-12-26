@@ -95,15 +95,6 @@ const dashboardRoutes: RoutesType[] = [
       },
     ],
   },
-  {
-    name: 'Analytics',
-    layout: '/pages',
-    path: '/analytics',
-    component: <Analytics />,
-    icon: (
-      <Icon as={BsListTask} width="20px" height="20px" color="inherit" />
-    ),
-  },
 
 ];
 
