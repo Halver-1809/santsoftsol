@@ -4,14 +4,14 @@ import React from 'react';
 import { Button, Flex, Link, Text } from '@chakra-ui/react';
 
 // Assets
-import banner from '@/assets/img/product/OverviewBanner.png';
-
+/* import banner from '@/assets/img/product/OverviewBanner.png';
+ */
 export default function Banner() {
 	// Chakra Color Mode
 	return (
 		<Flex
 			direction='column'
-			bgImage={banner}
+			bgImage={''}
 			bgSize='cover'
 			mb='20px'
 			py={{ base: '30px', md: '56px' }}

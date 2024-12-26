@@ -19,7 +19,7 @@ import {
   DrawerOverlay,
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import Light from '@/assets/img/layout/Light.png';
+/* import Light from '@/assets/img/layout/Light.png';
 import Dark from '@/assets/img/layout/Dark.png';
 import ContrastBlock from '@/assets/img/layout/ContrastBlock.png';
 import ContrastBlockDark from '@/assets/img/layout/ContrastBlockDark.png';
@@ -29,7 +29,7 @@ import DefaultSidebar from '@/assets/img/layout/DefaultSidebar.png';
 import DefaultSidebarDark from '@/assets/img/layout/DefaultSidebarDark.png';
 import MiniSidebar from '@/assets/img/layout/MiniSidebar.png';
 import MiniSidebarDark from '@/assets/img/layout/MiniSidebarDark.png';
-import ConfiguratorLogo from '@/assets/img/layout/ConfiguratorLogo.png';
+import ConfiguratorLogo from '@/assets/img/layout/ConfiguratorLogo.png'; */
 // Assets
 import {
   MdSettings,
@@ -406,14 +406,14 @@ export default function HeaderLinks(props: { [x: string]: any }) {
     setTheme(newTheme);
   };
   const ContrastBlockImage = useColorModeValue(
-    ContrastBlock,
-    ContrastBlockDark,
+    '',
+    '',
   );
-  const ContrastImage = useColorModeValue(Contrast, ContrastDark);
-  const MiniSidebarImage = useColorModeValue(MiniSidebar, MiniSidebarDark);
+  const ContrastImage = useColorModeValue('', '');
+  const MiniSidebarImage = useColorModeValue('', '');
   const DefaultSidebarImage = useColorModeValue(
-    DefaultSidebar,
-    DefaultSidebarDark,
+    '',
+    '',
   );
   const navbarIcon = useColorModeValue('gray.400', 'white');
   const textColor = useColorModeValue('secondaryGray.900', 'white');
@@ -591,7 +591,7 @@ export default function HeaderLinks(props: { [x: string]: any }) {
                 borderRadius="999px"
                 bgGradient="linear(to-b, brand.400, brand.600)"
               >
-                <Image src={ConfiguratorLogo} />
+                <Image src={''} />
               </Flex>
               <Box>
                 <Text color={textColor} fontSize="xl" fontWeight="700">
@@ -639,7 +639,7 @@ export default function HeaderLinks(props: { [x: string]: any }) {
                   label={<Text>Light</Text>}
                 >
                   <Image
-                    src={Light}
+                    src={''}
                     maxW={{ base: '100%', md: '130px' }}
                     borderRadius="8px"
                   />
@@ -650,7 +650,7 @@ export default function HeaderLinks(props: { [x: string]: any }) {
                   label={<Text>Dark</Text>}
                 >
                   <Image
-                    src={Dark}
+                    src={''}
                     maxW={{ base: '100%', md: '130px' }}
                     borderRadius="8px"
                   />

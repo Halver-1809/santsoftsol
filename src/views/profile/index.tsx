@@ -1,8 +1,8 @@
 // Chakra imports
 import { Box, Flex, SimpleGrid } from '@chakra-ui/react';
 // Assets
-import banner from '@/assets/img/auth/banner.png';
-import profile from '@/assets/img/crm/vbz.png';
+/* import banner from '@/assets/img/auth/banner.png';
+import profile from '@/assets/img/crm/vbz.png'; */
 
 // Custom components
 import Info from './components/Info';
@@ -20,7 +20,7 @@ export default function ProfileUser() {
       >
         {/* Column Left */}
         <Flex direction="column">
-          <Profile name="Vlad Mihalache" avatar={profile} banner={banner} />
+          <Profile name="Vlad Mihalache" avatar={''} banner={''} />
           <Info />
         </Flex>
         {/* Column Right */}

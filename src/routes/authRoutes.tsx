@@ -5,7 +5,6 @@ import { useRoutes } from 'react-router-dom';
 
 import SignInCentered from '@/views/auth/signIn';
 import ErrorComponent from '@/views/error';
-import HomeTwo from '@/views/landing/page-two';
 
 const authRoutes: RoutesType[] = [
   {

@@ -4,15 +4,13 @@ import React from 'react';
 import { Box, Button, Flex, Link, Text, Image } from '@chakra-ui/react';
 
 // Assets
-import banner from '@/assets/img/companies/skc.webp';
-import bg from '@/assets/img/product/OverviewBanner.png';
 
 export default function Banner() {
 	// Chakra Color Mode
 	return (
 		<Flex
 			direction='column'
-			bgImage={`url(${bg})`}       // Usar bg como fondo
+			bgImage={`url(${''})`}       // Usar bg como fondo
 			bgColor="lightbranding.100"
 			bgSize='cover'
 			bgPosition="center"
@@ -25,7 +23,7 @@ export default function Banner() {
 		>
 			{/* Imagen en la esquina derecha */}
 			<Box position="absolute" top="50%" right="0" transform="translateY(-50%)" display={{ base: 'none', md: 'block' }}>
-				<Image src={banner} alt="Banner Image" maxWidth="100%" />
+				<Image src={''} alt="Banner Image" maxWidth="100%" />
 			</Box>
 			<Text
 				fontSize={{ base: '24px', md: '34px' }}

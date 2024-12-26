@@ -5,12 +5,13 @@ interface ButtonProps {
   children: ReactNode;  // To accept any type of content inside the button (text, JSX elements, etc.)
   classname?: string;    // Optional prop for additional classes
   onClick?: () => void;  // Optional onClick handler
+  type?: "button" | "submit" | "reset"; // Add 'type' prop here to specify the button type
 }
 
-const Button: React.FC<ButtonProps> = ({ children, classname = "", onClick }) => {
+const Button: React.FC<ButtonProps> = ({ children, classname = "", onClick, type = "button" }) => {
   return (
     <button
-      type="button"
+      type={type} // Pass the type to the button element
       className={twMerge(
         "relative py-2 px-3 text-sm font-medium rounded-lg bg-gradient-to-b from-[#190d2e] to-[#4a208a] shadow-[0px_0px_12px_#8c45ff]",
         classname
