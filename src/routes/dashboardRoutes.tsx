@@ -9,9 +9,7 @@ import {
 } from 'react-icons/md';
 import ErrorComponent from '@/views/error';
 import DashboardCompanies from '@/views/dashboard';
-import { BsListTask } from 'react-icons/bs';
 import CompanyReports from '@/views/etapas/analisis';
-import Analytics from '@/views/analytics';
 import {  FaCheckCircle } from 'react-icons/fa';
 import {  IoAnalyticsSharp, IoCopySharp, IoListSharp } from 'react-icons/io5';
 import ReplicaStructure from '@/views/etapas/structure';
@@ -22,15 +20,7 @@ import HomeTwo from '@/views/landing/page-two';
 
 const dashboardRoutes: RoutesType[] = [
   
-  {
-    name: 'Panel principal',
-    layout: '/pages',
-    path: '/dashboard',
-    component: <DashboardCompanies />,
-    icon: (
-      <Icon as={MdHome} width="20px" height="20px" color="inherit" />
-    ),
-  },
+
   {
     name: 'Etapas',
     layout: '/pages/',
