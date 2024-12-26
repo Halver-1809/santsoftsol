@@ -2,15 +2,12 @@ import React from 'react';
 import { useRoutes, RouteObject } from 'react-router-dom';
 import { Icon } from '@chakra-ui/react';
 import {
-  MdPerson,
-  MdHome,
   MdCreateNewFolder,
   MdDataExploration,
 } from 'react-icons/md';
 import ErrorComponent from '@/views/error';
-import CompanyReports from '@/views/etapas/analisis';
 import {  FaCheckCircle } from 'react-icons/fa';
-import {  IoAnalyticsSharp, IoCopySharp, IoListSharp } from 'react-icons/io5';
+import {  IoCopySharp, IoListSharp } from 'react-icons/io5';
 import ReplicaStructure from '@/views/etapas/structure';
 import MigrationData from '@/views/etapas/migration';
 import VerifyData from '@/views/etapas/verify';
@@ -26,32 +23,6 @@ const dashboardRoutes: RoutesType[] = [
     icon: <Icon as={IoListSharp} width="20px" height="20px" color="inherit" />,
     collapse: true,
     items: [
-     
-      {
-        name: 'Réplica de estructuras y configuración',
-        layout: '/pages',
-        path: '/etapas/replica',
-        component: <ReplicaStructure />,
-        icon: (
-          <Icon
-            as={MdCreateNewFolder}
-            width="20px"
-            height="20px"
-            color="inherit"
-          />
-        ),
-        secondary: true,
-      },
-      {
-        name: 'Copia personalizaciones',
-        layout: '/pages',
-        path: '/etapas/copy',
-        component: <CopyPersonalization />,
-        secondary: true,
-        icon: (
-          <Icon as={IoCopySharp} width="20px" height="20px" color="inherit" />
-        ),
-      },
       {
         name: 'Migración de datos y acumulados',
         layout: '/pages',
