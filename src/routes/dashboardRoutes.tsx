@@ -9,7 +9,6 @@ import {
 } from 'react-icons/md';
 import ErrorComponent from '@/views/error';
 import DashboardCompanies from '@/views/dashboard';
-import ProfileUser from '@/views/profile';
 import { BsListTask } from 'react-icons/bs';
 import CompanyReports from '@/views/etapas/analisis';
 import Analytics from '@/views/analytics';
@@ -105,13 +104,7 @@ const dashboardRoutes: RoutesType[] = [
       <Icon as={BsListTask} width="20px" height="20px" color="inherit" />
     ),
   },
-  {
-    name: 'Perfil',
-    layout: '/pages',
-    path: '/profile',
-    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-    component: <ProfileUser />,
-  }
+
 ];
 
 const DashboardRoutes: React.FC = () => {
