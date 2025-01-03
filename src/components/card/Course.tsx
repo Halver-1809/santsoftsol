@@ -16,7 +16,6 @@ import { FaCogs } from 'react-icons/fa';
 // Assets
 import { MdOutlineTimer } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
-import { ModalModules } from '@/views/projects/listProjects/components/ModalModules';
 
 export default function Course(props: {
   icon?: JSX.Element;

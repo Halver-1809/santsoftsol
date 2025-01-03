@@ -163,7 +163,7 @@ export default function Footer() {
           <Flex mb={{ base: 4, md: 0 }}>
             <IconButton
               as="a"
-              href=""
+              href="https://www.facebook.com/share/18XEryd2Lb/?mibextid=wwXIfr"
               target="_blank"
               aria-label="Facebook"
               icon={<FaFacebook />}
@@ -173,7 +173,7 @@ export default function Footer() {
               _hover={{ bg: 'lightbranding.500', color: 'darkbrading.50' }}
               mr={4}
             />
-            <IconButton
+           {/*  <IconButton
               as="a"
               href=""
               target="_blank"
@@ -184,10 +184,10 @@ export default function Footer() {
               rounded="full"
               _hover={{ bg: 'lightbranding.500', color: 'darkbrading.50' }}
               mr={4}
-            />
+            /> */}
             <IconButton
               as="a"
-              href=""
+              href="https://www.linkedin.com/in/sant-soft-b0b66a339/"
               target="_blank"
               aria-label="LinkedIn"
               icon={<FaLinkedin />}
@@ -197,7 +197,7 @@ export default function Footer() {
               _hover={{ bg: 'lightbranding.500', color: 'darkbrading.50' }}
               mr={4}
             />
-            <IconButton
+           {/*  <IconButton
               as="a"
               href=""
               target="_blank"
@@ -220,7 +220,7 @@ export default function Footer() {
               rounded="full"
               _hover={{ bg: 'lightbranding.500', color: 'darkbrading.50' }}
               mr={4}
-            />
+            /> */}
           </Flex>
           <Text fontSize="sm" color="gray.400">
             &copy; SantSoft. All rights reserved.

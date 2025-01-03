@@ -59,7 +59,7 @@ const ContactForm: React.FC = () => {
 
     try {
       // Enviar datos al backend
-      const response = await axios.post('http://api.sant-soft.com:4000/contact', formData);
+      const response = await axios.post('https://api.sant-soft.com/contact', formData);
       setResponseMessage('Message sent successfully!');
     } catch (error) {
       setResponseMessage('Failed to send message. Please try again.');

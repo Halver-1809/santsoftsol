@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import LogoComponent from "../assets/logo";
-import SocialX from "../assets/social-x";
-import SocialInstagram from "../assets/social-instagram";
+
 import SocialYoutube from "../assets/social-youtube";
+import SocialFacebook from "../assets/social-instagram";
 
 const navItems = [
   { href: "#", title: "Features" },
@@ -38,8 +38,7 @@ export const Footer = () => {
           
           {/* Social Icons */}
           <div className="flex gap-5">
-            <SocialX className="text-white/40 hover:text-white transition h-6 w-6" />
-            <SocialInstagram className="text-white/40 hover:text-white transition h-6 w-6" />
+            <SocialFacebook className="text-white/40 hover:text-white transition h-6 w-6" />
             <SocialYoutube className="text-white/40 hover:text-white transition h-6 w-6" />
           </div>
         </div>

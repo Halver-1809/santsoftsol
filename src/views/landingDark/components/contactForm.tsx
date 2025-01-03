@@ -32,7 +32,7 @@ export const ContactMe = () => {
     const formData = { name, email, subject, message };
 
     try {
-      const response = await fetch("http://api.sant-soft.com:4000/contact", {
+      const response = await fetch("https://api.sant-soft.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
