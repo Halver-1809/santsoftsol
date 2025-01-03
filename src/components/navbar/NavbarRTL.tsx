@@ -2,7 +2,6 @@
 // Chakra Imports
 import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Flex, Link, Text, useColorModeValue } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';
-import AdminNavbarLinks from '@/components/navbar/NavbarLinksAdmin';
 
 export default function AdminNavbar(props: {
 	secondary: boolean;
@@ -12,15 +11,6 @@ export default function AdminNavbar(props: {
 	fixed: boolean;
 	onOpen: (...args: any[]) => any;
 }) {
-	const [ scrolled, setScrolled ] = useState(false);
-
-	useEffect(() => {
-		window.addEventListener('scroll', changeNavbar);
-
-		return () => {
-			window.removeEventListener('scroll', changeNavbar);
-		};
-	});
 
 	const { secondary,  brandText } = props;
 
@@ -36,13 +26,6 @@ export default function AdminNavbar(props: {
 	let secondaryMargin = '0px';
 	let paddingX = '15px';
 	let gap = '0px';
-	const changeNavbar = () => {
-		if (window.scrollY > 1) {
-			setScrolled(true);
-		} else {
-			setScrolled(false);
-		}
-	};
 
 	return (
 		<Box
@@ -130,11 +113,6 @@ export default function AdminNavbar(props: {
 					</Link>
 				</Box>
 				<Box ms='auto' w={{ sm: '100%', md: 'unset' }}>
-					<AdminNavbarLinks
-						onOpen={props.onOpen} 
-						secondary={props.secondary}
-						fixed={props.fixed} 
-					/>
 				</Box>
 			</Flex> 
 		</Box>

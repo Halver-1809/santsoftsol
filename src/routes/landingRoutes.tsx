@@ -7,7 +7,7 @@ import ErrorComponent from '@/views/error';
 import HomePrincipal from '@/views/landing/layout';
 import HomeSecundary from '@/views/landing/layoutwo';
 
-const landingRoutes: RoutesType[] = [
+const landingRoutes = [
   {
     name: 'Página Inicio',
     layout: '/home',

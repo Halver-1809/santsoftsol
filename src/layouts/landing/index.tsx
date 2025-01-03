@@ -12,8 +12,8 @@ export default function Landing() {
     return window.location.pathname !== '/home/full-screen-maps';
   };
 
-  const getRoutes = (routes: RoutesType[]): JSX.Element[] => {
-    return routes.map((route: RoutesType, key: any) => {
+  const getRoutes = (routes: any[]): JSX.Element[] => {
+    return routes.map((route: any, key: any) => {
       if (route.layout === '/home') {
         return (
           <Route path={`${route.path}`} element={route.component} key={key} />
@@ -29,7 +29,7 @@ export default function Landing() {
 
   return (
     <Box>
-      <SidebarContext.Provider
+            <SidebarContext.Provider
         value={{
           toggleSidebar,
           setToggleSidebar,
@@ -59,7 +59,8 @@ export default function Landing() {
             </Box>
           ) : null}
         </Box>
-      </SidebarContext.Provider>
+        </SidebarContext.Provider>
+
     </Box>
   );
 }

@@ -544,7 +544,6 @@ export default function HeaderLinks(props: { [x: string]: any }) {
         isOpen={isOpen}
         onClose={onClose}
         placement={document.documentElement.dir === 'rtl' ? 'left' : 'right'}
-        blockScrollOnMount={false}
       >
         <DrawerOverlay />
         <DrawerContent

@@ -59,18 +59,6 @@ body.chakra-ui-dark .fc-theme-standard td {
   border-color: #ffffff1a !important;
 }
 
-.fc .fc-scrollgrid-section-header > *,
-.fc .fc-scrollgrid-section-footer > * {
-  border-right: 0px !important;
-}
-.fc-theme-standard .fc-scrollgrid {
-  border: 1px solid #e0e5f2 !important;
-  border-radius: 10px;
-}
-body.chakra-ui-dark .fc-theme-standard .fc-scrollgrid {
-  border-color: #ffffff1a !important;
-}
-
 body.chakra-ui-light .fc-col-header-cell.fc-day.fc-day-mon {
   border-right: 0px;
   border-left: 0px;
@@ -139,16 +127,4 @@ body.chakra-ui-dark .fc-col-header-cell.fc-day.fc-day-sun {
   border-left: 0px;
   border-right: 0px;
   border-color: #ffffff1a;
-}
-
-body.chakra-ui-light .fc-scrollgrid.fc-scrollgrid-liquid > td {
-  border: 0px;
-}
-body.chakra-ui-dark .fc-scrollgrid.fc-scrollgrid-liquid > td {
-  border: 0px;
-  border-color: #ffffff1a;
-}
-
-.fc .fc-scrollgrid-section > td {
-  border: 0;
 }

@@ -143,9 +143,7 @@
   .EntirePreview .Game-Screen .Images .takeaway-screen .next-btn-box img {
     height: 10vw !important;
   }
-  .EntirePreview .Game-Screen .Images .takeaway-screen .content-box::-webkit-scrollbar {
-    width: 3vw;    
-  }
+  
 
 
 

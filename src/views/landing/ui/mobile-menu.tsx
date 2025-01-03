@@ -12,7 +12,6 @@ import {
   Icon,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import useAuth from '@/hooks/useAuth';
 import { IoMdMoon, IoMdSunny } from 'react-icons/io';
 
 export default function MobileMenu() {
@@ -21,7 +20,6 @@ export default function MobileMenu() {
   const trigger = useRef<HTMLButtonElement>(null);
   const mobileNav = useRef<HTMLDivElement>(null);
   const { colorMode, toggleColorMode } = useColorMode();
-  const { token } = useAuth();
 
   // Chakra Color Mode
   const navbarIcon = useColorModeValue('gray.400', 'white');

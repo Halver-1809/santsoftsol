@@ -9,8 +9,7 @@ import {
   Link,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { useState, useEffect } from 'react';
-import AdminNavbarLinks from '@/components/navbar/NavbarLinksAdmin';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 const usePath = () => {
@@ -28,16 +27,8 @@ export default function AdminNavbar(props: {
   onOpen: (...args: any[]) => any;
   [x: string]: any;
 }) {
-  const [scrolled, setScrolled] = useState(false);
 
-  const path = usePath();
-  useEffect(() => {
-    window.addEventListener('scroll', changeNavbar);
 
-    return () => {
-      window.removeEventListener('scroll', changeNavbar);
-    };
-  });
   
   const { secondary, brandText, mini, setMini, hovered, theme, setTheme } =
     props;
@@ -57,13 +48,7 @@ export default function AdminNavbar(props: {
   let secondaryMargin = '0px';
   let paddingX = '15px';
   let gap = '0px';
-  const changeNavbar = () => {
-    if (window.scrollY > 1) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+
 
   return (
     <Box
@@ -171,15 +156,6 @@ export default function AdminNavbar(props: {
           </Link>
         </Box>
         <Box ms="auto" w={{ sm: '100%', md: 'unset' }}>
-          <AdminNavbarLinks
-            mini={mini}
-            setMini={setMini}
-            theme={theme}
-            setTheme={setTheme}
-            onOpen={props.onOpen}
-            secondary={props.secondary}
-            fixed={props.fixed}
-          />
         </Box>
       </Flex>
     </Box>

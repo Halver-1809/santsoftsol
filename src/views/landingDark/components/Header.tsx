@@ -22,7 +22,7 @@ export const HeaderTwo = () => {
     navigate("/home/hometwoo/");
   };
 
-  const handleScrollToSection = (id) => {
+  const handleScrollToSection = (id : any) => {
     const element = document.getElementById(id);
     if (element) {
       window.scrollTo({

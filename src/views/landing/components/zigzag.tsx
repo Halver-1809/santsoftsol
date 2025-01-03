@@ -3,7 +3,6 @@ import FeatImage01 from '../../../assets/img/zigzag/feat-image-1.png';
 import FeatImage02 from '../../../assets/img/zigzag/feat-image-2.png';
 import FeatImage03 from '../../../assets/img/zigzag/feat-image-3.png';
 import FeatImage04 from '../../../assets/img/zigzag/feat-image-4.png';
-import FeatImage05 from '../../../assets/img/zigzag/feat-image-5.png';
 
 interface FeatureItemProps {
   imageSrc: string;

@@ -12,7 +12,6 @@ import {
   Image,
 } from '@chakra-ui/react';
 import { IoMdMoon, IoMdSunny } from 'react-icons/io';
-import useAuth from '@/hooks/useAuth';
 import logoHRBlack from '@/assets/img/landing/LogoSantsoflight.png';
 import logoHRWhite from '@/assets/img/landing/LogoSantsofdark.png';
 import { useNavigate } from 'react-router-dom';
@@ -21,7 +20,6 @@ export default function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
   const navbarIcon = useColorModeValue('gray.400', 'white');
   const navbarBg = useColorModeValue('#F9D47D', '#111c44');
-  const { token } = useAuth();
   const navigate = useNavigate(); 
   
   const goToHomeTwo = () => {
