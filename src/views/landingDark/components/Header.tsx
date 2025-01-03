@@ -39,7 +39,7 @@ export const HeaderTwo = () => {
         <div className="relative flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl max-w-2xl w-full">
           <div className="absolute inset-0 backdrop-blur -z-10 hidden md:block"></div>
           <div>
-            <div className="inline-flex items-center justify-center size-10 border border-white/15 rounded-lg">
+            <div className="inline-flex items-center justify-center size-10 border border-white/15 rounded-lg ml-8 mr-8">
               <LogoComponent className="size-8" />
             </div>
           </div>

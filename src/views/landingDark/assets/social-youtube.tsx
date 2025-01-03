@@ -1,17 +1,21 @@
-import * as React from "react"
-import { SVGProps } from "react"
-const SocialYoutube = (props: SVGProps<SVGSVGElement>) => (
+import * as React from "react";
+import { SVGProps } from "react";
+
+const SocialLinkedIn = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={24}
+    viewBox="0 0 24 24"
     fill="none"
     {...props}
   >
+    <circle cx="12" cy="12" r="10.5" stroke="currentColor" strokeWidth="1.5" />
     <path
       fill="currentColor"
-      d="M21.968 7.018A2.25 2.25 0 0 0 20.61 5.48C17.396 4.239 12.281 4.25 12 4.25c-.281 0-5.396-.011-8.61 1.23a2.25 2.25 0 0 0-1.358 1.537C1.789 7.954 1.5 9.663 1.5 12.5c0 2.837.289 4.547.532 5.483A2.25 2.25 0 0 0 3.39 19.52c3.079 1.188 7.897 1.229 8.548 1.229h.124c.65 0 5.472-.041 8.548-1.23a2.25 2.25 0 0 0 1.358-1.537c.243-.938.532-2.646.532-5.483 0-2.837-.289-4.547-.532-5.482Zm-6.913 6.093-3.75 2.625a.75.75 0 0 1-1.18-.611v-5.25a.75.75 0 0 1 1.18-.614l3.75 2.625a.75.75 0 0 1 0 1.228v-.003Z"
+      d="M9.94 9.28h2.26v1.06h.03a2.49 2.49 0 0 1 2.25-1.24c2.41 0 2.86 1.56 2.86 3.58v4.13h-2.34v-3.66c0-.87-.02-1.99-1.21-1.99-1.22 0-1.41.95-1.41 1.93v3.72H9.94V9.28zM7.65 8.24c-.73 0-1.32-.59-1.32-1.32 0-.72.59-1.32 1.32-1.32.72 0 1.31.6 1.31 1.32 0 .73-.59 1.32-1.31 1.32zm-1.12 9.21h2.24V9.28H6.53v8.17z"
     />
   </svg>
-)
-export default SocialYoutube
+);
+
+export default SocialLinkedIn;

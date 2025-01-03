@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import LogoComponent from "../assets/logo";
 
-import SocialYoutube from "../assets/social-youtube";
 import SocialFacebook from "../assets/social-instagram";
+import SocialLinkedIn from "../assets/social-youtube";
 
 const navItems = [
   { href: "#", title: "Features" },
@@ -22,24 +22,24 @@ export const Footer = () => {
             <LogoComponent className="h-10 w-auto" />
             <span className="font-medium text-white">SantSoft</span>
           </div>
-          
-          {/* Navigation links */}
-          <nav className="flex gap-5 lg:gap-7">
-            {navItems.map((link, index) => (
-              <Link
-                key={index}
-                to={link.href}
-                className="text-white/70 hover:text-white text-xs sm:text-sm transition"
-              >
-                {link.title}
-              </Link>
-            ))}
-          </nav>
-          
-          {/* Social Icons */}
+
           <div className="flex gap-5">
-            <SocialFacebook className="text-white/40 hover:text-white transition h-6 w-6" />
-            <SocialYoutube className="text-white/40 hover:text-white transition h-6 w-6" />
+            <a
+              href="https://www.facebook.com/share/18XEryd2Lb/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/40 hover:text-white transition h-6 w-6"
+            >
+              <SocialFacebook />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sant-soft-b0b66a339/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/40 hover:text-white transition h-6 w-6"
+            >
+              <SocialLinkedIn />
+            </a>
           </div>
         </div>
       </div>
