@@ -6,7 +6,7 @@ import { Fragment, useState } from 'react';
 /*import 'react-toastify/dist/ReactToastify.css';*/
 import Landing from '@/layouts/landing';
 import ErrorComponent from '../views/error';
-import HomeSecundary from '@/views/landing/layoutwo';
+import HomeSecundary from '../views/landingDark/layoutwo';
 
 export default function Main() {
   const [currentTheme, setCurrentTheme] = useState(initialTheme);

@@ -4,7 +4,6 @@ import { motion, useMotionTemplate, useScroll, useTransform } from "framer-motio
 import { useRef, useState } from "react";
 import useRelativeMousePosition from "../hooks/useRelativeMousePosition";
 import { PlanetModel } from "./planetModel";
-import StarsImage from "../assets/stars.png";
 import GridLines from "../assets/grid-lines.png";
 
 export const ContactMe = () => {
@@ -54,13 +53,13 @@ export const ContactMe = () => {
   };
 
   return (
-    <section ref={sectionRef} id="ContactMe" className="h-screen flex items-center justify-center py-20 md:py-24">
+    <section ref={sectionRef} id="ContactMe" className="h-screen flex items-center justify-center py-20 md:py-24 mb-32">
       <div className="container">
         <motion.div
           ref={borderedDivRef}
           animate={{ backgroundPositionX: "100%" }}
           transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
-          style={{ backgroundPositionY, backgroundImage: `url(${StarsImage})` }}
+          style={{ backgroundPositionY }}
           className="relative py-24 border border-white/15 rounded-xl overflow-hidden group"
         >
           <div className="absolute inset-0 bg-[rgb(74,32,138)] bg-blend-overlay [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)] group-hover:opacity-0 transition duration-700" style={{ backgroundImage: `url(${GridLines})` }}></div>

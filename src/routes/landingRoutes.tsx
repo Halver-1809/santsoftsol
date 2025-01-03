@@ -5,7 +5,7 @@ import { useRoutes } from 'react-router-dom';
 
 import ErrorComponent from '@/views/error';
 import HomePrincipal from '@/views/landing/layout';
-import HomeSecundary from '@/views/landing/layoutwo';
+import HomeSecundary from '../views/landingDark/layoutwo';
 
 const landingRoutes = [
   {

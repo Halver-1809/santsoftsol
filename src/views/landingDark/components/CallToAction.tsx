@@ -3,7 +3,6 @@ import { motion, useMotionTemplate, useScroll, useTransform } from "framer-motio
 import { useRef } from "react";
 import useRelativeMousePosition from "../hooks/useRelativeMousePosition";
 
-import StarsImage from "../assets/stars.png"; // Cambia al nombre real
 import GridLines from "../assets/grid-lines.png"; // Cambia al nombre real
 
 export const CallToAction = () => {
@@ -23,7 +22,7 @@ export const CallToAction = () => {
     <section
       ref={sectionRef}
       id="pricing" 
-      className="h-screen flex items-center justify-center py-20 md:py-24"
+      className="h-screen flex items-center justify-center py-20 md:py-24 mb-32"
     >
       <div className="container">
         <motion.div
@@ -38,7 +37,6 @@ export const CallToAction = () => {
           }}
           style={{
             backgroundPositionY,
-            backgroundImage: `url(${StarsImage})`,
           }}
           className="relative py-24 border border-white/15 rounded-xl overflow-hidden group"
         >
