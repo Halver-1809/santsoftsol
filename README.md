@@ -39,8 +39,7 @@ Hi, It is a SantSoft, This tool provides an optimized solution.
 ## Installation
 
 ##### Downloading and installing steps:
-* **[Download or Clone](https://github.com/HR-Solutions-Sap/HR-Migration-Front)** the latest version of the Code.
-
+¡
 ```console
 $ cd HR-MIGRATION-FRONT-MAIN
 $ npm install
@@ -56,8 +55,6 @@ $ npm run dev
 
 Reach out to me at one of the following places:
 
-- Github at **[Jonathan-Prime](https://github.com/Jonathan-Prime)**
-- E-Mail: **jonathanjdml@hotmail.com**
 - Github at **[Halver-1809](https://github.com/Halver-1809)**
 - E-Mail: **halver.verdugo@hrinteractive.co**
 
@@ -66,8 +63,7 @@ Reach out to me at one of the following places:
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/HR-Solutions-S-A-S/HR-Migration-Front/blob/main/licence.md)
 
-- Copyright © [Jonathan-Prime](https://github.com/Jonathan-Prime/ "Jonathan Molina") - 
-[Halver-1809](https://github.com/Halver-1809 "Halver Verdugo").
+- Copyright ©[Halver-1809](https://github.com/Halver-1809 "Halver Verdugo").
 
 
 ### KIT
