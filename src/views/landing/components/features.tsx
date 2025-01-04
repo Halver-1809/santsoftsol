@@ -10,7 +10,7 @@ import { IoAnalyticsSharp, IoCopySharp } from 'react-icons/io5';
 
 export default function Features() {
   const bgColor = useColorModeValue('#f2f2f2', '#aea4fb');
-  const iconColor = useColorModeValue('#F9D47D', 'white');
+  const iconColor = useColorModeValue('#AEA4FB', 'white');
 
   return (
     <Box
@@ -99,7 +99,13 @@ export default function Features() {
               <Text fontSize={{ base: 'sm', md: 'lg' }} color="gray.600" p={{ base: '4', md: '6' }}>
                 {item.text}
               </Text>
+              <Box mt="4">
+                <a href={`#${item.title}`} style={{ textDecoration: 'none' }}>
+                  <Text color="blue.500" fontWeight="bold">Learn more</Text>
+                </a>
+              </Box>
             </Flex>
+
           </SwiperSlide>
         ))}
       </Swiper>

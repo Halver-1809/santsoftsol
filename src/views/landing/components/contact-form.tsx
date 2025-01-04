@@ -16,7 +16,7 @@ import axios from 'axios'; // Para manejar solicitudes HTTP
 import contactImage from '../../../assets/img/landing/FormContact.jpg';
 
 const ContactForm: React.FC = () => {
-  const bgPricipal = useColorModeValue('#F9D47D', '#aea4fb');
+  const bgPricipal = useColorModeValue('#B3F200', '#aea4fb');
   const [scrollY, setScrollY] = useState(0);
   const bgColor = useColorModeValue('white', '0');
 

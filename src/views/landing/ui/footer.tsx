@@ -20,7 +20,7 @@ import patterHR from '@/assets/img/landing/pattern.svg';
 import SvgLogoSantsof from '@/assets/img/landing/logSantsoft';
 
 export default function Footer() {
-  const bgPricipal = useColorModeValue('#F9D47D', '#aea4fb');
+  const bgPricipal = useColorModeValue('#AEA4FB', '#aea4fb');
 
 
   return (

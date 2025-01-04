@@ -18,8 +18,8 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const navbarIcon = useColorModeValue('gray.400', 'white');
-  const navbarBg = useColorModeValue('#F9D47D', '#111c44');
+  const navbarIcon = useColorModeValue('lightbranding.500', 'darkbranding.200');
+  const navbarBg = useColorModeValue('lightbranding.100', 'darkbranding.900');
   const navigate = useNavigate(); 
   
   const goToHomeTwo = () => {
@@ -58,131 +58,45 @@ export default function Header() {
               m={0}
               p={0}
             >
-              <ListItem>
-                <Link
-                  href="#home"
-                  fontWeight="medium"
-                  px={4}
-                  py={3}
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'lightbranding.200',
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const section = document.querySelector('#home');
-                    section?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Home
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link
-                  href="#services"
-                  fontWeight="medium"
-                  px={4}
-                  py={3}
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'lightbranding.200',
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const section = document.querySelector('#services');
-                    section?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Services
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link
-                  href="#objectives"
-                  fontWeight="medium"
-                  px={4}
-                  py={3}
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'lightbranding.200',
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const section = document.querySelector('#objectives');
-                    section?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Objectives
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link
-                  href="#questions"
-                  fontWeight="medium"
-                  px={4}
-                  py={3}
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'lightbranding.200',
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const section = document.querySelector('#questions');
-                    section?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Questions
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link
-                  href="#customers"
-                  fontWeight="medium"
-                  px={4}
-                  py={3}
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'lightbranding.200',
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const section = document.querySelector('#customers');
-                    section?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Customers
-                </Link>
-              </ListItem>
-              <ListItem>
-                <Link
-                  href="#contactform"
-                  fontWeight="medium"
-                  px={4}
-                  py={3}
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'lightbranding.200',
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const section = document.querySelector('#contactform');
-                    section?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  Contact form
-                </Link>
-              </ListItem>
+              {[
+                { href: '#home', label: 'Home' },
+                { href: '#services', label: 'Services' },
+                { href: '#objectives', label: 'Objectives' },
+                { href: '#questions', label: 'Questions' },
+                { href: '#customers', label: 'Customers' },
+                { href: '#contactform', label: 'Contact form' },
+              ].map(({ href, label }) => (
+                <ListItem key={href}>
+                  <Link
+                    href={href}
+                    fontWeight="medium"
+                    px={4}
+                    py={3}
+                    _hover={{
+                      textDecoration: 'none',
+                      color: 'lightbranding.200',
+                    }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const section = document.querySelector(href);
+                      section?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    {label}
+                  </Link>
+                </ListItem>
+              ))}
               <ListItem>
                 <Button
                   variant="ghost"
-                  bg="darkbrading.100"
+                  bg="darkbranding.100"
                   p="0px"
                   minW="unset"
                   minH="unset"
                   h="25px"
                   w="max-content"
                 >
-                   <Link
+                  <Link
                     href="#/home"
                     fontWeight="medium"
                     px={4}
@@ -193,15 +107,13 @@ export default function Header() {
                     }}
                   >
                     <Icon
-                    m="10px"
-                    h="18px"
-                    w="18px"
-                    color={navbarIcon}
-                    as={colorMode === 'light' ? IoMdMoon : IoMdSunny}
-                  />
-                  
+                      m="10px"
+                      h="18px"
+                      w="18px"
+                      color={navbarIcon}
+                      as={colorMode === 'light' ? IoMdMoon : IoMdSunny}
+                    />
                   </Link>
-                 
                 </Button>
               </ListItem>
             </UnorderedList>

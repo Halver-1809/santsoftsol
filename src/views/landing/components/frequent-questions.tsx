@@ -29,7 +29,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ icon, question, answer }) => {
         <AccordionButton
           _hover={{ bg: useColorModeValue('gray.50', 'gray.600') }}
           _expanded={{
-            bg: useColorModeValue('#F9D47D', 'lightbranding.100'),
+            bg: useColorModeValue('#B3F200', 'lightbranding.100'),
             boxShadow: 'lg',
           }}
           transition="all 0.3s ease"

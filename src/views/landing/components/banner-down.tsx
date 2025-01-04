@@ -4,7 +4,7 @@ import React from "react";
 interface PropsBannerDown {}
 
 export const BannerDown: React.FC<PropsBannerDown> = () => {
-  const bgPricipal = useColorModeValue("#F9D47D", "#aea4fb");
+  const bgPricipal = useColorModeValue("#2501BA", "#aea4fb");
 
   return (
     <Box
